@@ -1,0 +1,11 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/styles.src.css -o ./public/css/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

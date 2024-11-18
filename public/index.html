@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaba</title>
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <header class="bg-white text-black">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <!-- lg+ -->
+            <nav class="flex items-center justify-between h-16 lg:h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" title="" class="flex">
+                        <img class="w-auto h-8 lg:h-10" src="img/STORY.png" alt="logo" />
+                    </a>
+                </div>
+    
+                <button type="button" class="inline-flex p-2 text-black transition-all duration-200 rounded-md md:hidden focus:bg-gray-800 hover:bg-gray-800">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+    
+                <div class="hidden md:flex md:items-center md:space-x-10">
+                    <a href="#" title="" class="text-sm font-medium text-black transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"> Home </a>
+    
+                    <a href="#" title="" class="text-sm font-medium text-black transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"> Tech </a>
+    
+                    <a href="#" title="" class="text-sm font-medium text-black transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"> Podcast </a>
+    
+                    <a href="#" title="" class="text-sm font-medium text-black transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"> Community </a>
+
+                    <button class="bg-black text-white px-3 py-2 hover:bg-white hover:text-black hover:border hover:border-black ">Contribute</button>                    
+                </div>
+
+                
+            </nav>
+    
+            <!-- xs to lg -->
+            <nav class="min-h-screen px-4 py-10 text-center bg-black md:hidden">
+                <button type="button" class="inline-flex p-2 text-white transition-all duration-200 rounded-md focus:bg-gray-800 hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+    
+                <nav class="flex flex-col items-center mt-10 space-y-4">
+                    <a href="#" title="" class="text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"> Home </a>
+    
+                    <a href="#" title="" class="text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"> Tech </a>
+    
+                    <a href="#" title="" class="text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"> Podcast </a>
+    
+                    <a href="#" title="" class="text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"> Community </a>
+
+                    <button class="bg-white text-black px-3 py-2 hover:bg-black hover:text-white">Contribute</button> 
+                </nav>
+            </nav>
+        </div>
+    </header>
+    <!-- end of header -->
+
+
+    <!-- begin of the hero section -->
+
+    <section class="relative py-10 bg-cover bg-center h-full bg-black sm:py-16 lg:py-24 xl:py-32" style="background-image: url(./img/hero-jaba.jpg);">   
+        <div class="absolute inset-0 hidden bg-gradient-to-r md:block from-black to-transparent"></div>
+    
+        <div class="absolute inset-0 block bg-black/60 md:hidden"></div>
+    
+        <div class="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="text-center md:w-2/3 lg:w-1/2 xl:w-1/3 md:text-left">
+                <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Get updated on new stories.</h2>
+                <p class="mt-4 text-base text-gray-200">Be the first one to get access to the new stories, when they have been posted.</p>
+    
+                <form action="#" method="POST" class="mt-8 lg:mt-12">
+                    <div class="flex flex-col items-center sm:flex-row sm:justify-center">
+                        <div class="flex-1 w-full min-w-0 px-4 sm:px-0">
+                            <div class="relative text-gray-400 focus-within:text-gray-600">
+                                <label for="email" class="sr-only"></label>
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                                    </svg>
+                                </div>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter email address"
+                                    class="block w-full py-4 pl-10 pr-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-md sm:rounded-r-none caret-blue-600 focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                                    required
+                                />
+                            </div>
+                        </div>
+    
+                        <button type="submit" class="inline-flex items-center justify-center flex-shrink-0 w-auto mt-4 font-semibold bg-black text-white px-4 py-4 hover:bg-white hover:text-black hover:border hover:border-black  transition-all duration-200  border border-transparent rounded-md sm:mt-0 sm:rounded-l-none sm:w-auto">
+                            Get instant access
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of hero section -->
+
+    <!-- blog section -->
+    <section class="dark:bg-gray-100 dark:text-gray-800">
+        <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+            <a rel="noopener noreferrer" href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50">
+                <img src="/img/pexels-diaznash-1109275.jpg" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500">
+                <div class="p-6 space-y-2 lg:col-span-5">
+                    <h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Noster tincidunt reprimique ad pro</h3>
+                    <span class="text-xs dark:text-gray-600">February 19, 2021</span>
+                    <p>Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
+                </div>
+            </a>
+            <div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50">
+                    <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="/img/pexels-amurephotography-9833516.jpg">
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+                        <span class="text-xs dark:text-gray-600">January 21, 2021</span>
+                        <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+                    </div>
+                </a>
+                <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50">
+                    <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="/img/pexels-enginakyurt-15483543.jpg">
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+                        <span class="text-xs dark:text-gray-600">January 22, 2021</span>
+                        <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+                    </div>
+                </a>
+                <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50">
+                    <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="/img/pexels-jane-moshi-1101911-2093596.jpg">
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+                        <span class="text-xs dark:text-gray-600">January 23, 2021</span>
+                        <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+                    </div>
+                </a>
+                <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 hidden sm:block">
+                    <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="/img/pexels-kevin-ku-92347-577585.jpg">
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+                        <span class="text-xs dark:text-gray-600">January 24, 2021</span>
+                        <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+                    </div>
+                </a>
+                <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 hidden sm:block">
+                    <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="/img/pexels-jane-moshi-1101911-2093596.jpg">
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+                        <span class="text-xs dark:text-gray-600">January 25, 2021</span>
+                        <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+                    </div>
+                </a>
+                <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50 hidden sm:block">
+                    <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="/img/pexels-diaznash-1109275.jpg">
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+                        <span class="text-xs dark:text-gray-600">January 26, 2021</span>
+                        <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="flex justify-center">
+                <button type="button" class="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-50 dark:text-gray-600">Load more posts...</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of blog section -->
+
+    <!-- category section -->
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -mx-4 -my-8">
+                <div class="py-8 px-4 lg:w-1/3">
+                <div class="h-full flex items-start">
+                    <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                    <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
+                    <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
+                    </div>
+                    <div class="flex-grow pl-6">
+                    <h2 class="tracking-widest text-xs title-font font-medium text-black-500 mb-1">Tech</h2>
+                    <h1 class="title-font text-xl font-medium text-gray-900 mb-3">2024 Tech events</h1>
+                    <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                    <a class="inline-flex items-center">
+                        <img alt="blog" src="/img/STORY.png" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                        <span class="flex-grow flex flex-col pl-3">
+                        <span class="title-font font-medium text-gray-900">Jaba Stories</span>
+                        </span>
+                    </a>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="py-8 px-4 lg:w-1/3">
+                    <div class="h-full flex items-start">
+                        <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                        <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
+                        <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
+                        </div>
+                        <div class="flex-grow pl-6">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-black-500 mb-1">Tech</h2>
+                        <h1 class="title-font text-xl font-medium text-gray-900 mb-3">2024 Tech events</h1>
+                        <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="blog" src="/img/STORY.png" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-3">
+                            <span class="title-font font-medium text-gray-900">Jaba Stories</span>
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                            <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
+                            <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                            <h2 class="tracking-widest text-xs title-font font-medium text-black-500 mb-1">Tech</h2>
+                            <h1 class="title-font text-xl font-medium text-gray-900 mb-3">2024 Tech events</h1>
+                            <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                            <a class="inline-flex items-center">
+                                <img alt="blog" src="/img/STORY.png" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                                <span class="flex-grow flex flex-col pl-3">
+                                <span class="title-font font-medium text-gray-900">Jaba Stories</span>
+                                </span>
+                            </a>
+                            </div>
+                        </div>
+                        </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+    
+ <script src="./js/main.js"></script>   
+</body>
+</html>
